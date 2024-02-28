@@ -38,6 +38,16 @@ def merge_sort(arr):
     
     return result
 
+# Definición de la función principal
+def main():
+    # Solicitar al usuario que ingrese los elementos separados por espacios
+    input_data = input("Ingrese los elementos separados por espacios: ")
+    # Convertir la entrada en una lista de enteros
+    arr = list(map(int, input_data.split()))
+    # Llamar a la función merge_sort para ordenar la lista
+    sorted_arr = merge_sort(arr)
+    # Mostrar los datos ordenados
+    print("Datos ordenados:", sorted_arr)
 # Comprobar si el script se ejecuta directamente
 if __name__ == "__main__":
     main()  # Llamar a la función principal
