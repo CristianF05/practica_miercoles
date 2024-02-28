@@ -1,14 +1,3 @@
-# Definición de la función principal
-def main():
-    # Solicitar al usuario que ingrese los elementos separados por espacios
-    input_data = input("Ingrese los elementos separados por espacios: ")
-    # Convertir la entrada en una lista de enteros
-    arr = list(map(int, input_data.split()))
-    # Llamar a la función merge_sort para ordenar la lista
-    sorted_arr = merge_sort(arr)
-    # Mostrar los datos ordenados
-    print("Datos ordenados:", sorted_arr)
-
 # Función de ordenamiento Merge Sort
 def merge_sort(arr):
     # Caso base: si la longitud del arreglo es 0 o 1, está ordenado por definición
